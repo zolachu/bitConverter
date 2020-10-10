@@ -63,7 +63,7 @@ const MeasureView = ({ measure, value, setValue }) => {
           ))}
         </Picker>
         <View style={styles.column}>
-          <Text style={[styles.input, { fontSize: 40, fontWeight: "bold" }]}>
+          <Text style={[styles.input, { fontSize: 30, fontWeight: "bold" }]}>
             {valueConverter}
           </Text>
         </View>
@@ -90,7 +90,7 @@ export default function App() {
 
   return (
     <View style={[styles.scene, { marginTop: Constants.statusBarHeight }]}>
-      <Text style={styles.title}>bit Converter app!</Text>
+      <Text style={styles.title}>Conversion Calculator!</Text>
       <TabView
         navigationState={{ index, routes }}
         renderScene={renderScene}
@@ -138,5 +138,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     fontSize: 30,
     textAlign: "center",
+    borderRadius: 10,
   },
 });
